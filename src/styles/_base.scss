@@ -1,0 +1,47 @@
+// src/styles/_base.scss
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $font-family;
+    background-color: $background-color;
+    color: $text-color;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    color: $primary-color;
+    margin-bottom: $padding-medium;
+  }
+  
+  button, input, textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: $padding-small $padding-medium;
+    border: 1px solid $primary-color;
+    border-radius: $border-radius;
+    transition: all 0.3s ease;
+  }
+  
+  button {
+    background-color: $primary-color;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darken($primary-color, 10%);
+  }
+  
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
